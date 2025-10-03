@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .loading-recorder {
-        position: absolute; top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        display: grid;
-        justify-items: center;
-        gap: 0.75rem;
-        text-align: center;
-        width:100%;
-        transition: opacity 0.5s ease-out;
-    }
-    .fade {
-        opacity: 0; /* Fade out */
-    }
-    .loading-text {
-        color: #4B5768;
-        font-family: Sans-serif;
-        font-size:14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .loading-recorder {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            justify-items: center;
+            gap: 0.75rem;
+            text-align: center;
+            width: 100%;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .fade {
+            opacity: 0;
+            /* Fade out */
+        }
+
+        .loading-text {
+            color: #4B5768;
+            font-family: Sans-serif;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="loading-recorder" id="initialLoader">
-        <img src="../../assets/theTestro.png" alt="Loading" width="240" height="65">
-        <span class="loading-text">
+        <img src="assets/theTestro.png" alt="Loading" width="240" height="65">
+        <span id="theTestro-run-info" class="loading-text">
             Please wait while we get things ready for you!
         </span>
     </div>
 </body>
+
 </html>
